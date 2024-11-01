@@ -1,13 +1,13 @@
 {
   "builds": [{
-    "src": "clinica/wsgi.py",
+    "src": "clinica/clinica/wsgi.py",
     "use": "@vercel/python",
     "config": { "maxLambdaSize": "15mb", "runtime": "python3.11.5" }
   }],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "clinica/wsgi.py"
+      "dest": "clinica/clinica/wsgi.py"
     }
   ]
 }
